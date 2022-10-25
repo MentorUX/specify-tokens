@@ -4,9 +4,138 @@
   "base": "main",
   "rules": [
     {
-      "name": "Extract all tokens to JSON",
-      "path": "./output/all-tokens.json",
-      "parsers": []
+      "name": "Colors",
+      "path": "./output/styles/colors.scss",
+      "filter": {
+        "types": [
+          "color"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "to-scss-variables",
+          "options": {
+            "formatName": "camelCase",
+            "formatTokens": {
+              "color": "hex"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Text Styles",
+      "path": "./output/styles/text-styles.scss",
+      "filter": {
+        "types": [
+          "textStyle"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "kebabcasify",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "to-scss-mixin-text-style",
+          "options": {
+            "exclude": [
+              "color",
+              "text-indent",
+              "vertical-align",
+              "text-align"
+            ],
+            "relativeLineHeight": true,
+            "genericFamily": "serif"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fonts Declaration",
+      "path": "./output/styles/fonts.scss",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-css-font-import",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ],
+            "genericFamily": "sans-serif",
+            "fontsPath": "../assets/fonts"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fonts Import",
+      "path": "./output/assets/fonts",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "convert-font",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assets / Vectors",
+      "path": "./output/assets/vectors",
+      "filter": {
+        "types": [
+          "vector"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "kebabcasify"
+        },
+        {
+          "name": "svgo",
+          "options": {
+            "svgo": {
+              "js2svg": {
+                "pretty": true
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
