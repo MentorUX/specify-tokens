@@ -1,0 +1,373 @@
+@mixin documentation-body-bold-large {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+@mixin documentation-body-bold-small {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+}
+
+@mixin documentation-body-regular-large {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+@mixin documentation-body-regular-small {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.17;
+}
+
+@mixin documentation-body-xl {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 1.17;
+}
+
+@mixin documentation-headlines-bold-large {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+@mixin documentation-headlines-bold-small {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+}
+
+@mixin documentation-headlines-regular-large {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+@mixin documentation-headlines-regular-small {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.17;
+}
+
+@mixin documentation-headlines-xl {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 1.17;
+}
+
+@mixin typography-body-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+@mixin typography-body-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+@mixin typography-button-large-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+}
+
+@mixin typography-button-large-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+}
+
+@mixin typography-button-normal-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.39px;
+}
+
+@mixin typography-button-normal-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.39px;
+}
+
+@mixin typography-button-x-large-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.5;
+  letter-spacing: 0.69px;
+}
+
+@mixin typography-button-x-large-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.5;
+  letter-spacing: 0.69px;
+}
+
+@mixin typography-caption-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@mixin typography-caption-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@mixin typography-colossus-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 122px;
+  line-height: 1.1;
+  letter-spacing: -1.22px;
+}
+
+@mixin typography-colossus-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 122px;
+  line-height: 1.1;
+  letter-spacing: -1.22px;
+}
+
+@mixin typography-display-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 1.1;
+  letter-spacing: -0.71px;
+}
+
+@mixin typography-display-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 71px;
+  line-height: 1.1;
+  letter-spacing: -0.71px;
+}
+
+@mixin typography-headline-1-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 1.1;
+  letter-spacing: -0.59px;
+}
+
+@mixin typography-headline-1-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 1.1;
+  letter-spacing: -0.59px;
+}
+
+@mixin typography-headline-2-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 1.1;
+  letter-spacing: -0.49px;
+}
+
+@mixin typography-headline-2-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 1.1;
+  letter-spacing: -0.49px;
+}
+
+@mixin typography-headline-3-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 1.1;
+  letter-spacing: -0.41000000000000003px;
+}
+
+@mixin typography-headline-3-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 1.1;
+  letter-spacing: -0.41000000000000003px;
+}
+
+@mixin typography-headline-4-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.3;
+  letter-spacing: -0.34px;
+}
+
+@mixin typography-headline-4-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.3;
+  letter-spacing: -0.34px;
+}
+
+@mixin typography-headline-5-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.3;
+  letter-spacing: -0.23px;
+}
+
+@mixin typography-headline-5-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.3;
+  letter-spacing: -0.23px;
+}
+
+@mixin typography-hero-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 1.1;
+  letter-spacing: -0.85px;
+}
+
+@mixin typography-hero-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 1.1;
+  letter-spacing: -0.85px;
+}
+
+@mixin typography-input-large-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+@mixin typography-input-large-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+@mixin typography-input-normal-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin typography-input-normal-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin typography-lead-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+@mixin typography-lead-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+@mixin typography-small-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin typography-small-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin typography-tiny-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@mixin typography-tiny-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@mixin typography-uber-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 102px;
+  line-height: 1.1;
+  letter-spacing: -1.02px;
+}
+
+@mixin typography-uber-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 102px;
+  line-height: 1.1;
+  letter-spacing: -1.02px;
+}
+
+@mixin typography-x-small-bold {
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@mixin typography-x-small-regular {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.5;
+}
